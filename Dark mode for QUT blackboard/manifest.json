@@ -1,0 +1,27 @@
+{
+    "name": "Dark mode for QUT Blackboard",
+    "description": "Dark mode for QUT Blackboard",
+    "version": "1.0",
+    "manifest_version": 3,
+    "web_accessible_resources": [{
+        "resources": ["css/*.css"],
+        "matches": ["*://blackboard.qut.edu.au/*"]
+    }],
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Dark mode for QUT"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://blackboard.qut.edu.au/*"],
+            "js": ["javascript/darkmode.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "icons": {
+        "16": "icons/qut16.png",
+        "48": "icons/qut48.png",
+        "128": "icons/qut128.png"
+    }
+}

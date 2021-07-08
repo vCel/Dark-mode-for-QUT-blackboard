@@ -1,0 +1,27 @@
+body {
+  width: 13rem;
+  padding-bottom: 5%;
+  color: #fafafa;
+  background-color: #242424;
+  user-select: none;
+}
+
+h1 {
+  font-size: small;
+  text-align: center;
+}
+
+.toggle {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.toggle > label > span {
+  font-size: large;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+  background-color: #424242;
+}
+
